@@ -20,29 +20,28 @@
             <div class="input-box"> <!--helps with making boxes-->
                 <h2 class="contact-me">Contact Me</h2>
                 <input type="text" placeholder="Full Name" required>
-                <input type="email" placeholder="Email"required>
+                <input  type="email" placeholder="Email"required>
                 <input type="number" placeholder="Phone Number"required>
-                <textarea id="message" rows="10" placeholder="Your message"></textarea> <!--makes this box bigger than the other ones-->
+                <textarea rows="10" placeholder="Your message"></textarea> <!--makes this box bigger than the other ones-->
                 <button type="submit">Send Message</button>
             </div>
         </form>
         <script src="https://smtpjs.com/v3/smtp.js"></script>
-        <script src="Contact form to email.js"></script>
         <script>
             function sendEmail(){
                 Email.send({
-                    Host : "smtp.elasticemail.com",
+                    Host : "smtp.gmail.com",
                     Username : "seyselaa@gmail.com",
-                    Password : "9C4F5D13D4C1357CD92C32A76988C661B8A7",
-                    To : 'seyselaaa@gmail,com',
+                    Password : "ByunBaek@1",
+                    To : 'seyselaaa@gmail.com',
                     From : document.getElementById("email").value,
-                    Subject : "New Contact Form Inquiry",
-                    Body : "And this is the body"
+                    Subject : "New Contact Form",
+                    Body : "Name:" + document.getElementById("name").value + "<br. Email: "+ document.getElementsById("name").value + "<br. Phone: "+ document.getElementsById("phone").value + "<br. Message: "+ document.getElementsById("message").value
                 }).then(
-                message => alert(message)
+                message => alert("Message Sent Successfully")
                 );
             }
-            </script>
+        </script>
     </section>
     </body>
 </html>
