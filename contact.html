@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" 
+    content="width=device-width,intitial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+    <body> <!--add a header-->
+        <header class="header">
+            <a href="index.html" class="logo">Home</a>
+            <nav class="navbar">
+                <a href="about.html" class="navbar">About me</a>
+            </nav>
+            <a href="contact.html" class="contact">Contact Me</a>
+        </header>
+    <section class="contact-form" id="contact"> <!--create a contact form-->
+        <form onsubmit="sendEmail(); reset(); return false;">
+            <div class="input-box"> <!--helps with making boxes-->
+                <h2 class="contact-me">Contact Me</h2>
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email"required>
+                <input type="number" placeholder="Phone Number"required>
+                <textarea id="message" rows="10" placeholder="Your message"></textarea> <!--makes this box bigger than the other ones-->
+                <button type="submit">Send Message</button>
+            </div>
+        </form>
+        <script src="https://smtpjs.com/v3/smtp.js"></script>
+        <script src="Contact form to email.js"></script>
+        <script>
+            function sendEmail(){
+                Email.send({
+                    Host : "smtp.elasticemail.com",
+                    Username : "seyselaa@gmail.com",
+                    Password : "9C4F5D13D4C1357CD92C32A76988C661B8A7",
+                    To : 'seyselaaa@gmail,com',
+                    From : document.getElementById("email").value,
+                    Subject : "New Contact Form Inquiry",
+                    Body : "And this is the body"
+                }).then(
+                message => alert(message)
+                );
+            }
+            </script>
+    </section>
+    </body>
+</html>

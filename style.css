@@ -80,7 +80,8 @@
 }
 .image-box img{
     border-radius: 50%;
-    width: 550px;
+    width: 300px;
+
 }
 ::-webkit-scrollbar{
     width:15px;
@@ -122,12 +123,12 @@
 .contact-form h2{
     text-align: center;
     font-size: 42px;
-    margin-top: 12% 8%;
+    margin-top: 30% 8%;
     color: #6f4e37;
 }
 .contact-form {
     max-width: 50em;
-    margin: 1rem auto;
+    margin: 10rem auto;
     text-align: center;
     margin-bottom: 3em;
 }
@@ -136,7 +137,6 @@
     justify-content: center;
     flex-wrap: wrap;
     background-color: white;
-
 }
 .contact-form form .input-box input,
 .contact-form form textarea{
@@ -148,19 +148,16 @@
     margin: 1em 0;
     resize: none;
 }
-.btn-1{
-    padding: 10px 28px;
-    background-color: #6f4e37;
-    color: #ffebcd;
-    border: 2px solid transparent;
-    font-size: 16px;
-    letter-spacing: 1px;
-    font-weight: 525;
-    transition: o.3s ease;
+form button{
+    padding: 15px;
+    background: #6f4e37;
+    color:white;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
 }
-
-.btn-1:hover{
+form button:hover{
     background-color: #ffebcd;
     box-shadow: 0 0 25px #ffebcd;
-    color: #6f4e37; 
+    color: #6f4e37;
 }
