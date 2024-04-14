@@ -120,26 +120,26 @@
     margin: 2em 0 0;
 }
 
-.contact-form h2{
+.submit-form h2{
     text-align: center;
     font-size: 42px;
     margin-top: 30% 8%;
     color: #6f4e37;
 }
-.contact-form {
+.submit-form {
     max-width: 50em;
     margin: 10rem auto;
     text-align: center;
     margin-bottom: 3em;
 }
-.contact-form form .input-box{ 
+.submit-form form .input-box{ 
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     background-color: white;
 }
-.contact-form form .input-box input,
-.contact-form form textarea{
+.submit-form form .input-box input,
+.submit-form form textarea{
     width: 100%;
     padding: 1.5em;
     font-size: 18px;
